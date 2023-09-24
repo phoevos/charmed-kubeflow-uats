@@ -4,7 +4,7 @@ boto3
 kfp==1.8.22
 minio
 # pin the client to match the version of the deployed MLflow server
-mlflow==2.1.1
+mlflow==2.7.1
 numpy
 pyarrow
 requests
