@@ -4,7 +4,7 @@
 #
 #    pip-compile requirements.in
 #
-anyio==4.0.0
+anyio==4.4.0
     # via httpcore
 asttokens==2.4.0
     # via stack-data
@@ -14,7 +14,7 @@ bcrypt==4.0.1
     # via paramiko
 cachetools==5.3.1
     # via google-auth
-certifi==2023.7.22
+certifi==2024.7.4
     # via
     #   httpcore
     #   httpx
@@ -26,7 +26,7 @@ cffi==1.15.1
     #   pynacl
 charset-normalizer==3.2.0
     # via requests
-cryptography==41.0.3
+cryptography==43.0.1
     # via paramiko
 decorator==5.1.1
     # via
@@ -46,7 +46,7 @@ httpcore==0.18.0
     # via httpx
 httpx==0.25.0
     # via lightkube
-idna==3.4
+idna==3.7
     # via
     #   anyio
     #   httpx
@@ -59,7 +59,7 @@ ipython==8.12.2
     # via ipdb
 jedi==0.19.0
     # via ipython
-jinja2==3.1.2
+jinja2==3.1.4
     # via pytest-operator
 juju==2.9.44.1
     # via
@@ -89,7 +89,7 @@ oauthlib==3.2.2
     #   requests-oauthlib
 packaging==23.1
     # via pytest
-paramiko==2.12.0
+paramiko==3.4.0
     # via juju
 parso==0.8.3
     # via jedi
@@ -149,7 +149,7 @@ pyyaml==6.0.1
     #   kubernetes
     #   lightkube
     #   pytest-operator
-requests==2.31.0
+requests==2.32.2
     # via
     #   kubernetes
     #   macaroonbakery
@@ -194,7 +194,7 @@ typing-extensions==4.8.0
     #   typing-inspect
 typing-inspect==0.9.0
     # via juju
-urllib3==1.26.16
+urllib3==1.26.19
     # via
     #   google-auth
     #   kubernetes
@@ -203,5 +203,6 @@ wcwidth==0.2.6
     # via prompt-toolkit
 websocket-client==1.6.3
     # via kubernetes
-websockets==7.0
+websockets==10.0
     # via juju
+zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability
